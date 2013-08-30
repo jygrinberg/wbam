@@ -1,7 +1,6 @@
-wbam
+WBAM: Web-Based Application Monitor
 ====
 
-Web-Based Application Monitor
 
 Description:
 ===
