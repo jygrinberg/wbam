@@ -1,0 +1,15 @@
+<% Dashboard.all.each do |dashboard| %>
+    <li>
+        <a href="/analyze/index/<%=dashboard.id%>"><%= dashboard.name %></a>
+        <button class="close remove-dashboard" value="<%=dashboard.id%>">&times;</button>
+    </li>
+<% end %>
+<li class="divider"></li>
+<li>
+    <%= form_for Dashboard.new, method: "get", url: {controller: "dashboard_manager", action: "new_dashboard"}, html: {class: "remove-dashboard-form form-inline"} do |f| %>
+        <div class="control-group">
+            <%= f.text_field :name, :value => '', :placeholder => "New dashboard", :class => "input-medium" %>
+        </div>
+        <%= f.submit "Create", class: "btn btn-primary btn-block" %>
+    <% end %>
+</li>

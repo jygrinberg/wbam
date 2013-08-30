@@ -1,0 +1,42 @@
+<li class="nav pull-right" id="dashboard-dropdown">
+    <a class="dropdown-toggle" data-toggle="dropdown">
+        <span class="dropdown-label">Dashboard<%= ': ' + @dashboard.name unless @dashboard.nil? %></span>
+        <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+        <%= render(:partial => "dashboard_manager/dashboard_dropdown_menu") %>
+    </ul>
+</li>
+
+<script>
+	$('.dropdown-toggle').dropdown();
+
+	$('.dropdown-menu').click(function(event){
+		event.stopPropagation();
+	});
+
+	$('.dropdown-menu a').click(function() {
+		$(".dropdown-label").text('Dashboard: ' + $(this).text());
+		return true;
+	});
+
+	$('#dashboard-dropdown .remove-dashboard').click(function (e) {
+		var dashboard = $(this).parent();
+		var dashboard_id = $(this).val();
+		$.ajax({
+			type: "GET",
+			url: "/dashboard_manager/remove_dashboard",
+			data: { dashboard_id: dashboard_id},
+			dataType: "HTML"
+		}).success(
+			function (html) {
+				dashboard.remove();
+				if (parseInt(<%= session[:dashboard_id] %>) == parseInt(dashboard_id)) {
+					window.location.replace("/analyze/index");
+				}
+			}
+		);
+		return false;
+	});
+
+</script>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  metric_name: MyString
+  namespace: MyString
+  unit: MyString
+
+two:
+  metric_name: MyString
+  namespace: MyString
+  unit: MyString

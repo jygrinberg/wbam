@@ -1,0 +1,56 @@
+<div id="chart-canvas">
+    <%
+       if @dashboard.nil? then
+           dashboard_id = session[:dashboard_id]
+           @dashboard = Dashboard.find(dashboard_id) unless Dashboard.where(id: dashboard_id).blank?
+           @dashboard = Dashboard.first if @dashboard.nil?
+           @dashboard = Dashboard.create(name: 'Sample Dashboard') if @dashboard.nil?
+           session[:dashboard_id] = @dashboard.id
+       end
+
+		@y_metric_options = Metric.distinct.pluck(:metric_name).map { |name| [name, name] }.to_a
+		@x_metric_options = @y_metric_options
+		@data_type_options = [["Average", "Average"], ["Minimum", "Minimum"], ["Maximum", "Maximum"], ["Sum", "Sum"]]
+		@target_options = [["All load balancers", "all_load_balancers"], ["All instances", "all_instances"], ["Website total", "website_total"]]
+		@target_options += Instance.where("name != 'N/A'").map { |i| ['Instance for ' + i.title  + ': ' + i.name, "i-"+i.id.to_s] }.to_a
+		@target_options += LoadBalancer.where("name != 'N/A'").map { |lb| ['Load balancer for ' + lb.title + ': ' + lb.name, "lb-"+lb.id.to_s] }.to_a
+		@start_time_options = [["1 hour ago", 60.to_s], ["1 day ago", (60*24).to_s], ["1 week ago", (60*24*7).to_s], ["1 month ago", (60*24*30).to_s], ["1 year ago", (60*24*365).to_s]]
+		@end_time_options = @start_time_options.dup.unshift(["Now", "0"])
+		@interval_options = [["1 min", "1"], ["5 min", "5"], ["1 hour", "60"], ["1 day", (60*24).to_s], ["1 week", (60*24*7).to_s]]
+    %>
+    <% @dashboard.rows.times do |r| %>
+        <div class="row-fluid">
+            <% @dashboard.cols.times do |c| %>
+                <% id_num = r*@dashboard.cols + c %>
+                <%= render(:partial => "analyze/chart", :locals => {:chart_id => id_num.to_s}) %>
+            <% end %>
+        </div>
+    <% end %>
+</div>
+
+<script>
+	$(document).ready(function () {
+		Highcharts.setOptions({
+			global: {
+				useUTC: true
+			},
+			credits: {
+				enabled: false
+			},
+			chart: {
+				backgroundColor: '#f5f5f5',
+				style: {
+					fontFamily: '"Trebuchet MS", "Helvetica", sans-serif'
+				}
+			}
+		});
+
+		window.chartCanvasManager = new ChartCanvasManager("chart-canvas", <%=@dashboard.rows%>, <%=@dashboard.cols%>);
+		var chartCanvasManager = window.chartCanvasManager;
+		chartCanvasManager.createChartFormManagers();
+		chartCanvasManager.resizeCharts();
+//		$(window).resize(chartCanvasManager.resizeCharts()); // TODO make this work
+//
+		chartCanvasManager.loadDashboardCharts();
+	});
+</script>

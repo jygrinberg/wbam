@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  time_based: false
+  start_time: 1
+  end_time: 1
+  interval: 1
+  x_metric_name: MyString
+  x_data_type: MyString
+  x_target: MyString
+  y_metric_name: MyString
+  y_data_type: MyString
+  y_target: MyString
+  dashboard_id: 1
+
+two:
+  time_based: false
+  start_time: 1
+  end_time: 1
+  interval: 1
+  x_metric_name: MyString
+  x_data_type: MyString
+  x_target: MyString
+  y_metric_name: MyString
+  y_data_type: MyString
+  y_target: MyString
+  dashboard_id: 1

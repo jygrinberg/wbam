@@ -1,0 +1,130 @@
+<%= javascript_include_tag "fetcher-manager" %>
+<div class="offset2 span8">
+    <%
+       start_time_options = [["5 min ago", (5).to_s], ["10 min ago", (10).to_s], ["1 hour ago", (60).to_s], ["1 day ago", (60*24).to_s], ["1 week ago", (60*24*7).to_s], ["2 weeks ago (max)", (60*24*14).to_s]]
+       end_time_options = start_time_options.dup.unshift(["Now", "0"])
+       interval_options = [["All Intervals", "all"]]
+       metric_options = [["All Metrics", "all"]]
+       repeat_frequency_sec_options = [["Once", "0"], ["Every 30 sec", (30).to_s], ["Every 3 min", (3*60).to_s], ["Every 5 min", (5*60).to_s], ["Every 15 min", (15*60).to_s], ["Every hour", (60*60).to_s], ["Every day", (60*60*24).to_s]]
+    %>
+
+    <div class="well row-fluid beanstalk-fetchers-container full-width">
+        <h1 class="text-center">Beanstalk Fetchers</h1>
+        <p class="text-center running-fetchers-last-updated">Last updated: loading...</p>
+        <div class="row-fluid beanstalk-fetchers">
+            <table class="table table-hover" id="beanstalk-fetchers-table">
+                <tr>
+                    <th class="fetcher-table-id-col">ID</th>
+                    <th class="fetcher-table-fetch-count-col">Fetch Count</th>
+                    <th class="fetcher-table-last-fetch-col">Last Fetch</th>
+                    <th class="fetcher-table-repeat-frequency-col">Repeat Frequency</th>
+                    <th class="fetcher-table-status-col">Status</th>
+                </tr>
+                <% BeanstalkFetcher.all.count.times do |alarm| %>
+                    <tr>
+                        <td><span style="visibility:hidden">Loading...</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                <% end %>
+            </table>
+        </div>
+
+        <div class="fetchers-form-container">
+            <%= form_tag("launch_beanstalk_fetcher", method: "get", remote: "true", class: "form-inline get-beanstalks-form", id: "get-beanstalks-form") do %>
+                <table class="control-group">
+                    <tr>
+                        <th>Repeat Frequency</th>
+                    </tr>
+                    <tr>
+                        <td><%= select_tag(:repeat_frequency_sec, options_for_select(repeat_frequency_sec_options), class: "input-medium get-data-repeat-frequency-sec") %></td>
+                    </tr>
+                </table>
+
+                <div style="text-align:center">
+                    <%= submit_tag "Launch Beanstalk Fetcher", class: "btn btn-large btn-primary" %>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+    <div class="well row-fluid data-fetchers-container full-width">
+        <h1 class="text-center">Data Fetchers</h1>
+        <p class="text-center running-fetchers-last-updated">Last updated: loading...</p>
+        <div class="row-fluid data-fetchers">
+            <table class="table table-hover" id="data-fetchers-table">
+                <tr>
+                    <th>ID</th>
+                    <th>Fetch Count</th>
+                    <th>Last Fetch</th>
+                    <th>Time Range</th>
+                    <th>Repeat Frequency</th>
+                    <th class="status-column">Status</th>
+                </tr>
+                <% DataFetcher.all.count.times do |alarm| %>
+                    <tr>
+                        <td><span style="visibility:hidden">Loading...</span></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                <% end %>
+            </table>
+        </div>
+
+        <div class="fetchers-form-container">
+            <%= form_tag("launch_data_fetcher", method: "get", remote: "true", class: "form-inline get-data-form", id: "get-data-form") do %>
+                <table class="control-group">
+                    <tr>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Interval</th>
+                        <th>Metrics</th>
+	                    <th>Repeat Frequency</th>
+                    </tr>
+                    <tr>
+                        <td><%= select_tag(:start_min_ago, options_for_select(start_time_options), class: "input-medium get-data-start-min_ago") %></td>
+                        <td><%= select_tag(:end_min_ago, options_for_select(end_time_options), class: "input-medium get-data-end-min_ago") %></td>
+                        <td><%= select_tag(:interval, options_for_select(interval_options), class: "input-medium get-data-interval") %></td>
+                        <td><%= select_tag(:metrics, options_for_select(metric_options), class: "input-medium get-data-metrics") %></td>
+                        <td><%= select_tag(:repeat_frequency_sec, options_for_select(repeat_frequency_sec_options), class: "input-medium get-data-repeat-frequency-sec") %></td>
+                    </tr>
+                </table>
+
+                <div style="text-align:center">
+                    <%= submit_tag "Launch Data Fetcher", class: "btn btn-large btn-primary" %>
+                </div>
+            <% end %>
+
+	        <!--
+            <%= form_tag("repair_database", method: "get", remote: "true", class: "form-inline repair-data-form") do %>
+                <%= submit_tag "Scan and Repair Database", class: "btn btn-large btn-primary btn-block" %>
+            <% end %>
+            -->
+        </div>
+    </div>
+</div>
+
+<script>
+	$(function () {
+		$('#metric-data-tabs li:first').addClass('active');
+		$('#metric-data-tables div:first').addClass('active');
+	});
+
+	$('#metric-data-tabs a').click(function (e) {
+		e.preventDefault();
+		$('#metric-data-tabs li').removeClass('active');
+		$('#metric-data-tables div').removeClass('active');
+
+		$(this).addClass('active');
+		$('#' + e.target.text).addClass('active');
+	});
+
+	if (window.fetcherManager == null) {
+		window.fetcherManager = new FetcherManager();
+	}
+</script>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title>WBAM</title>
+    <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+    <%= javascript_include_tag "jquery.js" %>
+    <%= javascript_include_tag "bootstrap.min.js" %>
+    <%= stylesheet_link_tag "/css/bootstrap.css" %>
+    <%= stylesheet_link_tag "/css/bootstrap-responsive.css" %>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+
+    <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="header-container">
+	    <div id="navbar-container">
+	        <div class="navbar navbar-fixed-top" id="top-navbar">
+	            <a class="brand text-center title-header" id="header-title" href="#">Web-Based Application Monitor</a>
+	            <ul class="nav">
+		            <li class="<%= 'active' if params[:controller] == 'analyze' %>"><a href="/analyze/index">Charts</a></li>
+	                <li class="<%= 'active' if params[:controller] == 'data' %>"><a href="/data/index">Database</a></li>
+	                <li class="<%= 'active' if params[:controller] == 'alarm_manager' %>"><a href="/alarm_manager/index">Alarms</a></li>
+	            </ul>
+
+	            <ul class="nav pull-right">
+
+		            <%= render(:partial => "settings/settings_dropdown") if @display_settings_dropdown %>
+	                <%= render(:partial => "dashboard_manager/dashboard_dropdown") if @display_dashboard_dropdown %>
+		            <%= render(:partial => "analyze/navbar") if @display_analyze_navbar %>
+	            </ul>
+	        </div>
+	        <div class="navbar-spacer"></div>
+	    </div>
+	    <%= render(:partial => "settings/settings_pane") if @display_settings_dropdown %>
+	</div>
+	<div class="row-fluid" id="page-container">
+	    <%= yield %>
+	</div>
+	<div id="overlay" style="display:none;"></div>
+</body>
+</html>

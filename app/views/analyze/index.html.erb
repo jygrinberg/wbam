@@ -1,0 +1,12 @@
+<%= javascript_include_tag "chart-canvas-manager" %>
+<%= javascript_include_tag "axis-form-manager" %>
+<%= javascript_include_tag "hc-bar-chart" %>
+<%= javascript_include_tag "hc-line-chart" %>
+<%= javascript_include_tag "hc-scatter-chart" %>
+<% @display_dashboard_dropdown = true %>
+<% @display_settings_dropdown = true %>
+<% @display_analyze_navbar = true %>
+
+<div class="display-canvas-wrapper">
+    <%= render(:partial=> "analyze/chart_canvas") %>
+</div>

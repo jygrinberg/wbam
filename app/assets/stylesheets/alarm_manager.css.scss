@@ -1,0 +1,73 @@
+// Place all the styles related to the AlarmManager controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.alarms-canvas {
+    margin: 5px 10px;
+}
+
+#alarms-table {
+
+    .alarm-name-header, .load-balancer-title-header {
+        font-size: 26px;
+        font-weight: bold;
+    }
+
+    .load-balancer-title-row td, .load-balancer-title-row th {
+        border-top: none;
+    }
+
+    tr.alarm-stats {
+        height: 75px;
+    }
+
+    td, th {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    td.alarm-fail {
+        vertical-align: bottom;
+        color: red;
+        background-color: rgba(255,0,0,.2);
+        border: 3px solid red;
+
+        .alarm-fail-status {
+            font-size: 42px;
+            font-weight: bold;
+        }
+    }
+
+    td.alarm-pass {
+        font-size: 42px;
+        color: yellowgreen;
+        font-weight: bold;
+        background-color: none;
+    }
+
+    .remove-alarm-positioner {
+        position: relative;
+        width: 0;
+        height: 0;
+        float: left;
+
+        .remove-alarm {
+            font-size: 36px;
+            top: 12px;
+            left: 1px;
+            position: absolute;
+        }
+    }
+
+}
+
+.create-alarm-form {
+    table {
+        margin: 0px auto 10px;
+
+        .alarm-threshold-units {
+            display: inline-block;
+            padding-left: 3px;
+            vertical-align: middle;
+        }
+    }
+}

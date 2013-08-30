@@ -1,0 +1,66 @@
+// Place all the styles related to the settings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#settings-pane {
+	position: fixed;
+	display: block;
+	top: 40px;
+	width: 100%;
+	z-index: 200;
+
+	background-color: #f5f5f5;			/* copied from .well */
+	border-bottom: 1px solid #e3e3e3;	/* copied from .well */
+	
+	.pane-container {
+		padding: 5px 15px;
+		width: auto;
+	}
+
+	#x-button {
+		position: relative;
+		top: 15px;
+		right: 15px;
+		font-size: 36px;
+	}
+
+	.pane-header, .pane-content {
+		border-bottom: 1px solid #e3e3e3;
+	}
+
+	.pane-content {
+		background-color: white;
+
+		.control-group {
+			margin: 5px auto 15px auto;
+		}
+	}
+
+	.pane-controls {
+		margin: 5px;
+	}
+
+	.settings-form {
+		margin: 0px;
+
+		.form-header {
+			margin: 0px;
+		}
+
+		label {
+			text-align: left;
+		}
+	}
+}
+
+#overlay {
+    position:fixed;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    background-color: black;
+    opacity: 0.4; 
+    display: block;
+    z-index: 50;
+}

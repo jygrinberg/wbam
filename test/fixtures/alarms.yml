@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  metric_id: 1
+  min_value: 1.5
+  max_value: 1.5
+  priority: 1.5
+  period: 1
+
+two:
+  metric_id: 1
+  min_value: 1.5
+  max_value: 1.5
+  priority: 1.5
+  period: 1

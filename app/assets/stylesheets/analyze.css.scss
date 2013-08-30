@@ -1,0 +1,127 @@
+// Place all the styles related to the prototype controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#dashboard-dropdown .dropdown-menu {
+    li {
+        position: relative;
+
+        .close {
+            position: absolute;
+            top: 3px;
+            right: 24px;
+        }
+
+        a,form {
+            padding: 3px 20px;
+        }
+    }
+
+    li:hover a {
+        background-color: #e3e3e3;
+        background-image: none;
+        color: #333333;
+    }
+}
+
+#chart-canvas {
+    margin: 0px 5px;
+    overflow: hidden;
+}
+
+.well.chart-well {
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    position: relative;
+    float: left;
+
+    .chart-load-spinner {
+        width: 0px;
+        height: 0px;
+        margin: 0px auto;
+        position: relative;
+        top: 135px;
+    }
+}
+
+.form-component {
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.form-horizontal .controls {
+    margin-left: 180px;
+}
+
+.form-container {
+    margin: 0px auto 10px auto;
+    width: 90%;
+    max-width: 650px;
+}
+
+.axis-form {
+    text-align: left;
+    margin: 0px auto 5px 0px;
+    max-width: 650px;
+
+    .table-header-left {
+        width: 50px;
+    }
+
+    table.control-group {
+        margin-bottom: 20px;
+        width: 650px;
+
+        .btn-group {
+            width: 100%;
+
+            .btn {
+                background-image: none;
+            }
+        }
+
+        .btn-group.toggle_chart_type {
+            button.bar, button.line, button.scatter {
+                background-repeat: no-repeat;
+                background-position-y: 3px;
+                background-size: 21px 21px;
+            }
+
+            .bar {
+                background-image: url(hc-bar-chart-icon.png);
+                background-position-x: 58px;
+            }
+
+            .line {
+                background-image: url(hc-line-chart-icon.png);
+                background-position-x: 53px;
+            }
+
+            .scatter {
+                background-image: url(hc-scatter-chart-icon.png);
+                background-position-x: 45px;
+            }
+        }
+
+        .btn-group2 .btn {
+            width: 50%;
+        }
+
+        .btn-group3 .btn {
+            width: 33.333%;
+        }
+
+        select {
+            width: 100%;
+        }
+
+        input {
+            width: 75px;
+        }
+    }
+
+    .table-header-row th {
+        min-height: 0px;
+    }
+
+}

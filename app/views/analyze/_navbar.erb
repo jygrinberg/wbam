@@ -1,0 +1,11 @@
+<li class="nav pull-right" id="settings-dropdown">
+	<a href="#" class="refresh-charts">Refresh Charts</a>
+</li>
+
+<script>
+	$('#settings-dropdown .refresh-charts').click(function() {
+		window.chartCanvasManager.resizeCharts();
+		$('.axis-form').trigger('submit');
+		return false;
+	});
+</script>

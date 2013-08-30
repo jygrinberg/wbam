@@ -1,0 +1,99 @@
+<div class="well chart-well">
+    <div class="form-container">
+        <%= form_tag("generate", method: "get", remote: "true", id: "axis-form-#{chart_id}", class: "form-inline axis-form", style: ((@dashboard.toggle_chart_forms)? "": "display:none;" )) do %>
+            <table class="control-group">
+                <tr>
+                    <th class="table-header-left">Chart</th>
+                    <td>
+                        <div class="btn-group btn-group3 toggle_chart_type" data-toggle="buttons-radio">
+                            <%= button_tag "Bar", type: "button", value: "bar", class: "time bar btn" %>
+                            <%= button_tag "Line", type: "button", value: "line", class: "time line btn" %>
+                            <%= button_tag "Scatter", type: "button", value: "scatter", class: "scatter btn" %>
+                            <%= hidden_field_tag :toggle_chart_type, 'bar' %>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+		    <table class="control-group">
+			    <tr class="controls-row">
+				    <th class=table-header-left>Target</th>
+			        <td><%= select_tag(:target, options_for_select(@target_options), class: "span12 target") %></td>
+			    </tr>
+		    </table>
+
+            <table class="control-group">
+                <tr class="table-header-row controls-row">
+                    <th class="table-header-left"></th>
+                    <th class="span4">Start</th>
+                    <th class="span4">End</th>
+                    <th class="span4">Interval</th>
+                </tr>
+                <tr class="controls-row">
+                    <th>Time</th>
+                    <td class="span4"><%= select_tag(:start_time, options_for_select(@start_time_options), class: "chart-start-time") %></td>
+                    <td class="span4"><%= select_tag(:end_time, options_for_select(@end_time_options), class: "chart-end-time") %></td>
+                    <td class="span4"><%= select_tag(:interval, options_for_select(@interval_options), class: "chart-interval") %></td>
+                </tr>
+            </table>
+            <table class="control-group">
+                <tr class="table-header-row controls-row">
+                    <th class="table-header-left"></th>
+                    <th class="span4">Metric</th>
+                    <th class="span4">Data Type</th>
+                    <th class="span2">Axis Min</th>
+                    <th class="span2">Axis Max</th>
+                </tr>
+                <tr class="x-axis-settings controls-row">
+                    <th>X axis</th>
+                    <td class="span4"><%= select_tag(:x_metric_name, options_for_select(@x_metric_options), class: "axis-metric-name x-metric-name") %></td>
+                    <td class="span4"><%= select_tag(:x_data_type, options_for_select(@data_type_options), class: "axis-data-type x-data-type") %></td>
+                    <td class="span2"><%= text_field_tag(:x_axis_min, nil, placeholder: "auto", class: "x-axis-min", type: "number", step: "any", min: '0') %></td>
+                    <td class="span2"><%= text_field_tag(:x_axis_max, nil, placeholder: "auto", class: "x-axis-max", type: "number", step: "any", min: '0') %></td>
+                </tr>
+                <tr class="y-axis-settings controls-row">
+                    <th>Y axis</th>
+                    <td class="span4"><%= select_tag(:y_metric_name, options_for_select(@y_metric_options), class: "axis-metric-name y-metric-name") %></td>
+                    <td class="span4"><%= select_tag(:y_data_type, options_for_select(@data_type_options), class: "axis-data-type y-data-type") %></td>
+                    <td class="span2"><%= text_field_tag(:y_axis_min, nil, placeholder: "auto", class: "y-axis-min", type: "number", step: "any", min: '0') %></td>
+                    <td class="span2"><%= text_field_tag(:y_axis_max, nil, placeholder: "auto", class: "y-axis-max", type: "number", step: "any", min: '0') %></td>
+                </tr>
+            </table>
+
+            <table class="control-group">
+                <tr>
+                    <th class="table-header-left">Color</th>
+                    <td>
+                        <div class="btn-group btn-group3 toggle_color" data-toggle="buttons-radio">
+                            <%= button_tag "Static", type: "button", value: "static", class: "color_btn btn active" %>
+                            <%= button_tag "Value", type: "button", value: "value", class: "color_btn btn" %>
+                            <%= button_tag "Time", type: "button", value: "time", class: "color_btn btn" %>
+                            <%= hidden_field_tag :toggle_color, 'static' %>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table class="control-group">
+                <tr>
+                    <th class="table-header-left">Size</th>
+                    <td>
+                        <div class="btn-group btn-group3 toggle_size" data-toggle="buttons-radio">
+                            <%= button_tag "Static", type: "button", value: "static", class: "color_btn btn active" %>
+                            <%= button_tag "Value", type: "button", value: "value", class: "color_btn btn" %>
+                            <%= button_tag "Time", type: "button", value: "time", class: "color_btn btn" %>
+                            <%= hidden_field_tag :toggle_size, 'static' %>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <%= submit_tag "Graph", class: "btn btn-primary btn-block" %>
+        <% end %>
+    </div>
+
+    <div class="chart-wrapper" id="<%= "chart-wrapper-#{chart_id}" %>" style="min-width: 310px; height:0px;">
+        <div class="chart-load-spinner" id="<%= "chart-load-spinner-#{chart_id}" %>"></div>
+        <div id="<%= "chart-#{chart_id}" %>" style="height:100%"></div>
+    </div>
+</div>
+

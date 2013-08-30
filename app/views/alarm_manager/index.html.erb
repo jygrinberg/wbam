@@ -1,0 +1,91 @@
+<%= javascript_include_tag "alarm-manager" %>
+
+<%
+   metric_name_options = Metric.distinct.pluck(:metric_name).map { |name| [name, name] }.to_a
+   data_type_options = [["Average", "Average"], ["Minimum", "Minimum"], ["Maximum", "Maximum"], ["Sum", "Sum"]]
+   interval_options = [["5 min", 5.to_s]]
+   relation_options = [[">", ">"], ["<", "<"]]
+%>
+
+<div class="well alarms-canvas">
+	<table class="table table-hover" id="alarms-table">
+	    <%
+	       lbs = LoadBalancer.where('name != "N/A"').to_a
+	       num_cols = lbs.count
+	    %>
+	    <tr class="load-balancer-title-row">
+	        <th class="alarm-header-col"></th>
+	        <% lbs.each do |lb| %>
+	            <td>
+	                <span class="load-balancer-title-header">
+	                    <%= lb.title %>
+	                </span>
+	                <br>
+	                <%= "Load balancer #{lb.name[-4..-1]}" %>
+	            </td>
+	        <% end %>
+	    </tr>
+	    <% Alarm.all.each do |alarm| %>
+	        <tr class="row-bordered alarm-stats" id="alarm-stats-<%= alarm.id %>">
+	            <td>
+	                <span class="remove-alarm-positioner"><button class="close remove-alarm" id="remove-alarm-<%= alarm.id %>" value="<%= alarm.id %>" style="display: none">&times;</button></span>
+				    <span class="alarm-name-header">
+				        <%= alarm.metric.metric_name %>
+				    </span>
+	                <br>
+	                <%= alarm.metric.data_type %>  <%= "#{alarm.relation} #{alarm.threshold}#{alarm.metric.unit_pretty}" %>
+	            </td>
+	            <% lbs.each do |lb| %>
+	                <td class="stats-lb-<%= lb.name %>"><span style="visibility:hidden">Loading...</span></td>
+	            <% end %>
+	        </tr>
+	    <% end %>
+		<% if Alarm.all.count == 0 then %>
+			<tr><th colspan="<%= num_cols + 1 %>"><h1>No alarms exist</h1></th></tr>
+		<% end %>
+	</table>
+	<p class="text-center alarms-last-updated">Last updated: loading...</p>
+	<p class="text-center">*Monitoring datapoints over the last 60 min at 5 min intervals</p>
+</div>
+
+<div class="well full-width row-fluid alarms-canvas">
+    <h1 class="text-center">Create New Alarm</h1>
+    <%= form_tag("create_alarm", method: "get", remote: "true", class: "create-alarm-form", id: "create-alarm-form") do %>
+        <table class="choose-metric">
+            <tr>
+                <th>Metric Name</th>
+                <th>Data Type</th>
+                <th>Interval</th>
+            </tr>
+            <tr>
+                <td><%= select_tag(:metric_name, options_for_select(metric_name_options), class: "input-medium metric-name-input") %></td>
+                <td><%= select_tag(:data_type, options_for_select(data_type_options), class: "input-medium data-type-input") %></td>
+                <td><%= select_tag(:interval, options_for_select(interval_options), class: "input-medium interval-input") %></td>
+            </tr>
+        </table>
+
+        <table class="alarm-conditions">
+            <tr>
+                <th>Trigger when metric</th>
+            </tr>
+            <tr>
+                <td>
+                    <%= select_tag(:relation, options_for_select(relation_options), class: "input-mini relation-input") %>
+                    <%= text_field_tag(:threshold, 0, class: "input-small threshold-input", type: "number", step: "any", min: '0') %>
+	                <p class="alarm-threshold-units"></p>
+                </td>
+
+            </tr>
+        </table>
+
+        <div style="text-align:center">
+            <%= submit_tag "Create Alarm", class: "btn btn-large btn-primary" %>
+        </div>
+    <% end %>
+</div>
+
+<script>
+	if (window.alarmManager == null || window.alarmManager.num_cols != <%= num_cols %>) {
+		window.alarmManager = new AlarmManager('alarms-canvas', <%= num_cols %>);
+	}
+</script>

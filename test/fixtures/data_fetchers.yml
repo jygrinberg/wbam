@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  fetch_timestamp: 2013-08-23 14:40:34
+  start_min_ago: 1
+  end_min_ago: 1
+  intervals: MyString
+  metrics: MyString
+  periods: MyString
+  completed: 2013-08-23 14:40:34
+
+two:
+  fetch_timestamp: 2013-08-23 14:40:34
+  start_min_ago: 1
+  end_min_ago: 1
+  intervals: MyString
+  metrics: MyString
+  periods: MyString
+  completed: 2013-08-23 14:40:34

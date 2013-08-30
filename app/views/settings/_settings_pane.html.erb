@@ -1,0 +1,195 @@
+<%
+   if @dashboard.nil? then
+       dashboard_id = session[:dashboard_id]
+       @dashboard = Dashboard.find(dashboard_id) unless Dashboard.where(id: dashboard_id).blank?
+	   @dashboard = Dashboard.first if @dashboard.nil?
+	   @dashboard = Dashboard.create(name: 'Sample Dashboard') if @dashboard.nil?
+	   session[:dashboard_id] = @dashboard.id
+   end
+%>
+<div id="settings-pane" style="display: none;">
+	<button class="close close-pane" id="x-button">&times;</button>
+	<%= form_tag("/settings/save", method:"get", remote: "true", class: "settings-form form-horizontal") do %>
+		<div class="row-fluid pane-container pane-header">
+			<div class="span3">
+				<h3 class="form-header">Layout</h3>
+			</div>
+		    <div class="span3">
+		        <h3 class="form-header">Display</h3>
+		    </div>
+		    <div class="span3">
+		        <h3 class="form-header">Alarms</h3>
+		    </div>
+		</div>
+		<div class="row-fluid pane-container pane-content">
+
+			<div class="span3">
+				<div class="control-group">
+					<%= label_tag(:display_rows, "Number of rows", class: "control-label") %>
+					<div class="controls">
+						<%= text_field_tag(:display_rows, @dashboard.rows, class: "input-mini", type: "number") %>
+					</div>
+				</div>
+				<div class="control-group">
+					<%= label_tag(:display_cols, "Number of columns", class: "control-label") %>
+					<div class="controls">
+						<%= text_field_tag(:display_cols, @dashboard.cols, class: "input-mini", type: "number") %>
+					</div>
+				</div>
+			</div>
+
+			<div class="span3">
+				<div class="control-group">
+				    <%= label_tag(:toggle_display_mode, "Presenter mode", class: "control-label") %>
+				    <div class="controls">
+				        <div class="btn-group toggle_display_mode" data-toggle="buttons-radio">
+				            <%= button_tag "On", type: "button", class: "btn " + ((@dashboard.toggle_presenter_mode)? "active" : "") %>
+				            <%= button_tag "Off", type: "button", class: "btn " + ((!@dashboard.toggle_presenter_mode)? "active" : "") %>
+				            <%= hidden_field_tag :toggle_display_mode, @dashboard.toggle_presenter_mode %>
+				        </div>
+				    </div>
+				</div>
+			    <div class="control-group">
+			        <%= label_tag(:toggle_chart_settings, "Chart settings", class: "control-label") %>
+					<div class="controls">
+						<div class="btn-group toggle_chart_settings" data-toggle="buttons-radio">
+						    <%= button_tag "Show", type: "button", class: "btn " + ((@dashboard.toggle_chart_forms)? "active" : "") %>
+							<%= button_tag "Hide", type: "button", class: "btn " + ((!@dashboard.toggle_chart_forms)? "active" : "") %>
+							<%= hidden_field_tag :toggle_chart_settings, @dashboard.toggle_chart_forms %>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		    <div class="span3">
+		        <div class="control-group">
+		            <%= label_tag(:toggle_alarm_mode, "Highlight failed alarms", class: "control-label") %>
+		            <div class="controls">
+		                <div class="btn-group toggle_alarm_mode" data-toggle="buttons-radio">
+		                    <%= button_tag "On", type: "button", class: "btn " + ((@dashboard.toggle_alarm_mode)? "active" : "") %>
+		                    <%= button_tag "Off", type: "button", class: "btn " + ((!@dashboard.toggle_alarm_mode)? "active" : "") %>
+		                    <%= hidden_field_tag :toggle_alarm_mode, @dashboard.toggle_alarm_mode %>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<div class="row-fluid pane-container pane-controls">
+			<div class="pull-right">
+				<%= button_tag "Cancel", type: "button", class: "btn close-pane" %>
+				<%= submit_tag "Save", class: "btn btn-primary" %>
+			</div>
+		</div>
+	<% end %>
+</div>
+
+<script>
+$(".toggle_chart_settings button").each(function() {
+	// bind the chart_settings radio buttons to the hidden field
+	$(this).bind('click', function() {
+		if ($(this).text() == 'Show')   $(".toggle_chart_settings input[type=hidden]").val(true);
+		else                            $(".toggle_chart_settings input[type=hidden]").val(false);
+		if ($(this).text()=="Show")	{
+			$(".axis-form").slideDown(function() {
+				window.chartCanvasManager.resizeCharts();
+				$(window).trigger("resize");
+			});
+		}
+		else {
+			$(".axis-form").slideUp(function() {
+				window.chartCanvasManager.resizeCharts();
+				$(window).trigger("resize");
+			});
+		}
+	});
+});
+
+var reload_chart_interval_sec = 60;
+var refresh_page_interval_sec = 10*60;
+
+$(".toggle_display_mode button").each(function() {
+	// bind the display_mode radio buttons to the hidden field
+	$(this).bind('click', function() {
+		var input_field = $(".toggle_display_mode input[type=hidden]");
+		if ($(this).text() == 'On') input_field.val(true);
+		else                        input_field.val(false);
+	});
+});
+
+$(".toggle_alarm_mode button").each(function() {
+	// bind the alarm_mode radio buttons to the hidden field
+	$(this).bind('click', function() {
+		var input_field = $(".toggle_alarm_mode input[type=hidden]");
+		if ($(this).text() == 'On') input_field.val(true);
+		else                        input_field.val(false);
+	});
+});
+
+$(document).ready(function() {
+	if ($(".toggle_display_mode input[type=hidden]").val()=="true")	{
+		setInterval(function(){
+			$(".axis-form").trigger("submit");
+			$(this).trigger('click');
+		}, reload_chart_interval_sec*1000);
+		setTimeout(function() {
+			window.location.reload(); // reload page from the server
+		}, refresh_page_interval_sec*1000);
+	}
+});
+
+var close_settings_pane = function() {
+	$("#overlay").hide();
+	$("#settings-pane").hide();
+};
+
+$("#settings-pane .close-pane").click(function() {
+	close_settings_pane();
+	return false;
+});
+
+$("#settings-btn").click(function() {
+	$("#overlay").toggle();
+	$("#settings-pane").toggle();
+	return false;
+});
+
+$("#top-navbar li:not(#settings-dropdown) a").click(function() {
+	close_settings_pane();
+	return true;
+});
+
+$('.settings-form').submit(function() {
+	var formValues = {charts: []}
+	formValues["settings"] = $(this).serialize();
+	var dashboard_display_rows = <%=@dashboard.nil? ? 0 : @dashboard.rows%>;
+	var dashboard_display_cols = <%=@dashboard.nil? ? 0 : @dashboard.cols%>;
+	var toggle_display_mode = <%=@dashboard.nil? ? -1 : @dashboard.toggle_presenter_mode.to_s %>
+	var toggle_alarm_mode = <%=@dashboard.nil? ? -1 : @dashboard.toggle_alarm_mode.to_s %>
+
+
+	var axis_forms = $(".axis-form")
+	for (var i=0; i<axis_forms.length; i++) {
+		var form = axis_forms[i]
+		formValues["charts"].push($(form).serialize() + "&id=" + form.id);
+	}
+
+	$.ajax({
+		type: "GET",
+		url: $(this).attr('action'),
+		data: formValues,
+		dataType: "HTML"
+	}).success(function(html) {
+
+			if ($("#display_rows").val() != dashboard_display_rows
+				|| $("#display_cols").val() != dashboard_display_cols
+				|| $(".toggle_display_mode input[type=hidden]").val() != toggle_display_mode.toString()
+				|| $(".toggle_alarm_mode input[type=hidden]").val() != toggle_alarm_mode.toString()) {
+
+					window.location.reload();
+			}
+	});
+
+	close_settings_pane();
+	return false; // prevents normal behavior
+});
+</script>
