@@ -9,7 +9,8 @@ WBAM is a tool to monitor the health of web applications hosted on Amazon Web Se
 Data Fetcher
 ===
 In the "Database" tab, WBAM users can launch a beanstalk fetcher to track the running load balancers and server instances at each timestamp, and a data fetcher to continouously fetch metric data for each running beanstalk. A dynamic user interface allows WBAM users to monitor that status of all running beanstalk and data etchers. 
-<b>Note:</b> once the fetchers are created, execute 'rake jobs:work' in the command line to start running them in a bacground process. To abort this process, execute 'rake jobs:clear'.
+
+b>Note:</b> in order to start running the fetchers once they are created, execute 'rake jobs:work' in the command line to spawn a background process. To terminate this process, execute 'rake jobs:clear'.
 
 Each time a data fetcher executes, it makes requests for each metric name (CPU utilization, network traffic, request count, etc.), each data type (maximum, average, etc.), each interval (past minute, 5 minutes, hour, day, etc.), and each instance of each load balancer.
 
