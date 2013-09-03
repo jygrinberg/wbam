@@ -29,7 +29,7 @@ Steps:
 * In the "Database" tab, launch a Data Fetcher (recommended -- start time: 5 min ago, end time: now, repeat frequency: 3 min)
 * In the "Alarms" tab, create alarms
 * In the "Charts" tab, create charts
-
+* Note: see "Chart License" below
 
 Data Fetcher
 ===
@@ -52,3 +52,8 @@ One of the mroe complex charting features is the scatter plot, which allows user
 Alarm Manager
 ===
 In the "Alarms" tab, WBAM users can customize alarms for each metric type. A colorful table summarizes the health status of each load balancer for each alarm, and it is dynamically updated so it can be put on display.
+
+Chart License
+===
+Note: WBAM uses the Highcharts JS library to render charts. Before using WBAM for commercial use, consult Highcharts licensing info found here:
+http://shop.highsoft.com/highcharts.html
