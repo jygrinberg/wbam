@@ -223,12 +223,12 @@ class AnalyzeController < ApplicationController
 
                         if params[:toggle_color] == 'value' then
                             color = ALARM_COLOR if is_alarm_dp && toggle_alarm_mode
-                            color ||= 'rgb('+(value_scale*255).to_i.to_s+','+(255-value_scale*200).to_i.to_s+','+(0).to_i.to_s+')'
+                            color ||= 'rgb('+(value_scale*255).to_i.to_s+','+(255-value_scale*200).to_i.to_s+','+(0).to_i.to_s+')' unless value_scale.nil?
                         end
 
                         if params[:toggle_size] == 'value' then
                             radius = ALARM_RADIUS_LINE_PX if is_alarm_dp && toggle_alarm_mode
-                            radius ||= (value_scale*MAX_RADIUS_LINE_PX + MIN_RADIUS_PX).to_i
+                            radius ||= (value_scale*MAX_RADIUS_LINE_PX + MIN_RADIUS_PX).to_i unless value_scale.nil?
                         end
                     end
 
@@ -306,11 +306,11 @@ class AnalyzeController < ApplicationController
 
                         if params[:toggle_color] == 'value' then
                             color = ALARM_COLOR if is_alarm_dp && toggle_alarm_mode
-                            color ||= 'rgb('+(value_scale*255).to_i.to_s+','+(255-value_scale*200).to_i.to_s+','+(0).to_i.to_s+')'
+                            color ||= 'rgb('+(value_scale*255).to_i.to_s+','+(255-value_scale*200).to_i.to_s+','+(0).to_i.to_s+')' unless value_scale.nil?
                         end
                         if params[:toggle_size] == 'value' then
                             radius = ALARM_RADIUS_SCATTER_PX if is_alarm_dp && toggle_alarm_mode
-                            radius ||= (value_scale*MAX_RADIUS_SCATTER_PX + MIN_RADIUS_PX).to_i
+                            radius ||= (value_scale*MAX_RADIUS_SCATTER_PX + MIN_RADIUS_PX).to_i unless value_scale.nil?
                         end
                     end
 
