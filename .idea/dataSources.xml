@@ -5,7 +5,7 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/wbam_test</jdbc-url>
       <user-name>wbam</user-name>
-      <user-password>dfcddfdddfdddfc8dfcbdfc7</user-password>
+      <user-password>dfdddfc8dfcbdfc7</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
@@ -19,7 +19,7 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/wbam_prod</jdbc-url>
       <user-name>wbam</user-name>
-      <user-password>dfcddfdddfdddfc8dfcbdfc7</user-password>
+      <user-password>dfdddfc8dfcbdfc7</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>
@@ -33,7 +33,7 @@
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/wbam_dev</jdbc-url>
       <user-name>wbam</user-name>
-      <user-password>dfcddfdddfdddfc8dfcbdfc7</user-password>
+      <user-password>dfdddfc8dfcbdfc7</user-password>
       <libraries>
         <library>
           <url>file://$USER_HOME$/.RubyMine50/config/jdbc-drivers/mysql-connector-license.txt</url>

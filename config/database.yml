@@ -5,7 +5,7 @@ development:
   database: wbam_dev
   pool: 5
   username: wbam
-  password: gwwbam
+  password: wbam
   #**socket: /opt/local/var/run/mysql5/mysqld.sock**
 
 test:
@@ -15,7 +15,7 @@ test:
   database: wbam_test
   pool: 5
   username: wbam
-  password: gwwbam
+  password: wbam
   #**socket: /opt/local/var/run/mysql5/mysqld.sock**
 
 production:
@@ -25,5 +25,5 @@ production:
   database: wbam_prod
   pool: 5
   username: wbam
-  password: gwwbam
+  password: wbam
   #**socket: /opt/local/var/run/mysql5/mysqld.sock**
