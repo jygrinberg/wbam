@@ -96,7 +96,6 @@ ActiveRecord::Schema.define(version: 20130830151108) do
   end
 
   add_index "datapoints", ["metric_id"], name: "index_datapoints_on_metric_id", using: :btree
-  add_index "datapoints", ["period"], name: "index_datapoints_on_period", using: :btree
   add_index "datapoints", ["timestamp"], name: "index_datapoints_on_timestamp", using: :btree
 
   create_table "delayed_jobs", force: true do |t|
@@ -120,7 +119,7 @@ ActiveRecord::Schema.define(version: 20130830151108) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "title"
+    t.string   "title",           default: "Unknown Service"
     t.integer  "loadBalancer_id"
     t.datetime "stopped_at"
   end
@@ -130,7 +129,7 @@ ActiveRecord::Schema.define(version: 20130830151108) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "name"
-    t.string   "title"
+    t.string   "title",      default: "Unknown Service"
   end
 
   create_table "metrics", force: true do |t|

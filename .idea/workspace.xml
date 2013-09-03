@@ -2,11 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="438d4994-af3d-4571-9964-7d8d064905de" name="Default" comment="">
+      <change type="DELETED" beforePath="C:\Users\Joshi\Documents\wbam\db\migrate\20130822234610_remove_repeat_from_data_fetches.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Joshi\Documents\wbam\db\migrate\20130822234941_add_repeat_frequency_sec_to_data_fetches.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Joshi\Documents\wbam\db_update.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Joshi\Documents\wbam\rotate_logs.sh" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Joshi\Documents\wbam\server_start.sh" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130704003219_create_datapoints.rb" afterPath="$PROJECT_DIR$/db/migrate/20130704003219_create_datapoints.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130704003354_create_instances.rb" afterPath="$PROJECT_DIR$/db/migrate/20130704003354_create_instances.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130704003434_create_load_balancers.rb" afterPath="$PROJECT_DIR$/db/migrate/20130704003434_create_load_balancers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130704003501_create_metrics.rb" afterPath="$PROJECT_DIR$/db/migrate/20130704003501_create_metrics.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130704011054_add_index_to_datapoints.rb" afterPath="$PROJECT_DIR$/db/migrate/20130704011054_add_index_to_datapoints.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130705222019_add_name_to_instances.rb" afterPath="$PROJECT_DIR$/db/migrate/20130705222019_add_name_to_instances.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130705233544_add_name_to_load_balancers.rb" afterPath="$PROJECT_DIR$/db/migrate/20130705233544_add_name_to_load_balancers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130719170454_create_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130719170454_create_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130719170854_create_dashboards.rb" afterPath="$PROJECT_DIR$/db/migrate/20130719170854_create_dashboards.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130802165845_add_period_to_datapoint.rb" afterPath="$PROJECT_DIR$/db/migrate/20130802165845_add_period_to_datapoint.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130802185240_add_title_to_instance.rb" afterPath="$PROJECT_DIR$/db/migrate/20130802185240_add_title_to_instance.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130805190440_add_alarm_vals_to_chart.rb" afterPath="$PROJECT_DIR$/db/migrate/20130805190440_add_alarm_vals_to_chart.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130805191845_remove_x_target_and_y_target_from_chart.rb" afterPath="$PROJECT_DIR$/db/migrate/20130805191845_remove_x_target_and_y_target_from_chart.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130805191904_add_targt_to_chart.rb" afterPath="$PROJECT_DIR$/db/migrate/20130805191904_add_targt_to_chart.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130806173316_add_target_to_metric.rb" afterPath="$PROJECT_DIR$/db/migrate/20130806173316_add_target_to_metric.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130806234222_add_title_to_load_balancer.rb" afterPath="$PROJECT_DIR$/db/migrate/20130806234222_add_title_to_load_balancer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130809201938_add_color_and_size_to_chart.rb" afterPath="$PROJECT_DIR$/db/migrate/20130809201938_add_color_and_size_to_chart.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130809211656_change_integer_format_in_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130809211656_change_integer_format_in_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130813183252_remove_load_balancer_id_from_load_balancers.rb" afterPath="$PROJECT_DIR$/db/migrate/20130813183252_remove_load_balancer_id_from_load_balancers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130813183352_remove_instance_id_from_instances.rb" afterPath="$PROJECT_DIR$/db/migrate/20130813183352_remove_instance_id_from_instances.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130816013829_add_chart_type_to_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130816013829_add_chart_type_to_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130816013944_remove_time_based_from_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130816013944_remove_time_based_from_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130816175447_remove_alarm_values_from_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130816175447_remove_alarm_values_from_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130816175526_add_alarm_values_to_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130816175526_add_alarm_values_to_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130816232759_add_load_balancer_to_instances.rb" afterPath="$PROJECT_DIR$/db/migrate/20130816232759_add_load_balancer_to_instances.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130819172315_add_stopped_at_to_instances.rb" afterPath="$PROJECT_DIR$/db/migrate/20130819172315_add_stopped_at_to_instances.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130820010646_create_delayed_jobs.rb" afterPath="$PROJECT_DIR$/db/migrate/20130820010646_create_delayed_jobs.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130820172027_add_toggle_chart_forms_and_toggle_presenter_mode_to_dashboards.rb" afterPath="$PROJECT_DIR$/db/migrate/20130820172027_add_toggle_chart_forms_and_toggle_presenter_mode_to_dashboards.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130822004301_add_axis_ranges_to_charts.rb" afterPath="$PROJECT_DIR$/db/migrate/20130822004301_add_axis_ranges_to_charts.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130822235901_create_beanstalk_fetchers.rb" afterPath="$PROJECT_DIR$/db/migrate/20130822235901_create_beanstalk_fetchers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130823214033_create_data_fetchers.rb" afterPath="$PROJECT_DIR$/db/migrate/20130823214033_create_data_fetchers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130823232747_add_fetch_count_to_data_fetcher.rb" afterPath="$PROJECT_DIR$/db/migrate/20130823232747_add_fetch_count_to_data_fetcher.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130823232808_add_fetch_count_to_beanstalk_fetcher.rb" afterPath="$PROJECT_DIR$/db/migrate/20130823232808_add_fetch_count_to_beanstalk_fetcher.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130828161808_create_alarms.rb" afterPath="$PROJECT_DIR$/db/migrate/20130828161808_create_alarms.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130830151108_add_toggle_alarm_mode_to_dashboard.rb" afterPath="$PROJECT_DIR$/db/migrate/20130830151108_add_toggle_alarm_mode_to_dashboard.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/GruntFile.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/GruntFile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/analyze/_chart.html.erb" afterPath="$PROJECT_DIR$/app/views/analyze/_chart.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/analyze/_chart_canvas.html.erb" afterPath="$PROJECT_DIR$/app/views/analyze/_chart_canvas.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard_manager/_dashboard_dropdown.erb" afterPath="$PROJECT_DIR$/app/views/dashboard_manager/_dashboard_dropdown.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/dashboard_manager/_dashboard_dropdown_menu.erb" afterPath="$PROJECT_DIR$/app/views/dashboard_manager/_dashboard_dropdown_menu.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/analyze/_navbar.erb" afterPath="$PROJECT_DIR$/app/views/analyze/_navbar.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/settings/_settings_dropdown.erb" afterPath="$PROJECT_DIR$/app/views/settings/_settings_dropdown.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/settings/_settings_pane.html.erb" afterPath="$PROJECT_DIR$/app/views/settings/_settings_pane.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/alarm.rb" afterPath="$PROJECT_DIR$/app/models/alarm.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/alarm_manager_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/alarm_manager_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/alarm_manager_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/alarm_manager_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/alarm_manager_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/alarm_manager_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/alarm_test.rb" afterPath="$PROJECT_DIR$/test/models/alarm_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/alarms.yml" afterPath="$PROJECT_DIR$/test/fixtures/alarms.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/analyze_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/analyze_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/analyze_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/analyze_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/analyze_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/analyze_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/aws.rb" afterPath="$PROJECT_DIR$/config/initializers/aws.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/aws.yml" afterPath="$PROJECT_DIR$/config/aws.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/axis.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/axis.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/beanstalk_fetcher.rb" afterPath="$PROJECT_DIR$/app/models/beanstalk_fetcher.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/beanstalk_fetcher_test.rb" afterPath="$PROJECT_DIR$/test/models/beanstalk_fetcher_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/beanstalk_fetchers.yml" afterPath="$PROJECT_DIR$/test/fixtures/beanstalk_fetchers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/boilerplate.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/boilerplate.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap-responsive.css" afterPath="$PROJECT_DIR$/public/css/bootstrap-responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/bootstrap.css" afterPath="$PROJECT_DIR$/public/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/bullet.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/bullet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/backup/bullet.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/backup/bullet.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/bulletChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/bulletChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/backup/bulletChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/backup/bulletChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/bundle" afterPath="$PROJECT_DIR$/bin/bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/chart.rb" afterPath="$PROJECT_DIR$/app/models/chart.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/chart_test.rb" afterPath="$PROJECT_DIR$/test/models/chart_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/charts.yml" afterPath="$PROJECT_DIR$/test/fixtures/charts.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/core.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/cumulativeLineChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/cumulativeLineChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/d3.layout.js" afterPath="$PROJECT_DIR$/public/javascript/d3/d3.layout.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/d3.v2.js" afterPath="$PROJECT_DIR$/public/javascript/d3/d3.v2.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/d3.v3.js" afterPath="$PROJECT_DIR$/public/javascript/d3/d3.v3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/d3.v3.min.js" afterPath="$PROJECT_DIR$/public/javascript/d3/d3.v3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/d3prototype.iml" afterPath="$PROJECT_DIR$/.idea/d3prototype.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/dashboard.rb" afterPath="$PROJECT_DIR$/app/models/dashboard.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/dashboard_manager_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/dashboard_manager_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/dashboard_manager_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/dashboard_manager_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/dashboard_manager_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/dashboard_manager_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/dashboard_manager_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/dashboard_manager_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/dashboard_test.rb" afterPath="$PROJECT_DIR$/test/models/dashboard_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/dashboards.yml" afterPath="$PROJECT_DIR$/test/fixtures/dashboards.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/data.yml" afterPath="$PROJECT_DIR$/db/data.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/data_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/data_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/data_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/data_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/data_fetcher.rb" afterPath="$PROJECT_DIR$/app/models/data_fetcher.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/data_fetcher_test.rb" afterPath="$PROJECT_DIR$/test/models/data_fetcher_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/data_fetchers.yml" afterPath="$PROJECT_DIR$/test/fixtures/data_fetchers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/data_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/data_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/data_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/data_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/datapoint.rb" afterPath="$PROJECT_DIR$/app/models/datapoint.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/datapoint_test.rb" afterPath="$PROJECT_DIR$/test/models/datapoint_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/datapoints.yml" afterPath="$PROJECT_DIR$/test/fixtures/datapoints.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/delayed_job.rb" afterPath="$PROJECT_DIR$/app/models/delayed_job.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/delayed_job" afterPath="$PROJECT_DIR$/bin/delayed_job" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/discreteBar.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/discreteBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/discreteBarChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/discreteBarChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/distribution.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/distribution.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/historicalBar.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/historicalBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/historicalBarChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/historicalBarChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/indentedTree.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/indentedTree.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/alarm_manager/index.html.erb" afterPath="$PROJECT_DIR$/app/views/alarm_manager/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/analyze/index.html.erb" afterPath="$PROJECT_DIR$/app/views/analyze/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/data/index.html.erb" afterPath="$PROJECT_DIR$/app/views/data/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/instance.rb" afterPath="$PROJECT_DIR$/app/models/instance.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/instance_test.rb" afterPath="$PROJECT_DIR$/test/models/instance_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/instances.yml" afterPath="$PROJECT_DIR$/test/fixtures/instances.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/intro.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/intro.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/legend.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/legend.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/line.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/line.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/linePlusBarChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/linePlusBarChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/linePlusBarWithFocusChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/linePlusBarWithFocusChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineWithFisheye.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineWithFisheye.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineWithFisheyeChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineWithFisheyeChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineWithFocusChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/lineWithFocusChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/load_balancer.rb" afterPath="$PROJECT_DIR$/app/models/load_balancer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/load_balancer_test.rb" afterPath="$PROJECT_DIR$/test/models/load_balancer_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/load_balancers.yml" afterPath="$PROJECT_DIR$/test/fixtures/load_balancers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/metric.rb" afterPath="$PROJECT_DIR$/app/models/metric.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/metric_test.rb" afterPath="$PROJECT_DIR$/test/models/metric_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/metrics.yml" afterPath="$PROJECT_DIR$/test/fixtures/metrics.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBar.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarHorizontal.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarHorizontal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarHorizontalChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarHorizontalChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarTimeSeries.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarTimeSeries.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarTimeSeriesChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiBarTimeSeriesChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/multiChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/nv.d3.css" afterPath="$PROJECT_DIR$/public/css/nv.d3.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/nv.d3.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/nv.d3.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/nv.d3.min.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/nv.d3.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/ohlcBar.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/ohlcBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/parallelCoordinates.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/parallelCoordinates.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/pie.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/pie.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/pieChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/pieChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/quiet_assets.rb" afterPath="$PROJECT_DIR$/config/initializers/quiet_assets.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rails" afterPath="$PROJECT_DIR$/bin/rails" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rake" afterPath="$PROJECT_DIR$/bin/rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/scatter.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/scatter.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/scatterChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/scatterChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/scatterPlusLineChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/scatterPlusLineChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/config/initializers/secret_token.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.yml" afterPath="$PROJECT_DIR$/config/settings.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/settings_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/settings_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/settings_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/settings_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/settings_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/settings_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/settings_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/settings_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/sparkline.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/sparkline.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/sparklinePlus.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/sparklinePlus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/stackedArea.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/stackedArea.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/models/stackedAreaChart.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/models/stackedAreaChart.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/tooltip.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/tooltip.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/d3/nv/utils.js" afterPath="$PROJECT_DIR$/public/javascript/d3/nv/utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
     </list>
     <ignored path="d3prototype.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1377849668693" ignored="false" />
+    <file path="/Dummy.txt" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1378242405696" ignored="false" />
     <file path="/data_controller.rb" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1377561708290" ignored="false" />
     <file path="/analyze_controller.rb" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1377897213192" ignored="false" />
     <file path="/Gemfile" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1376948042391" ignored="false" />
@@ -89,6 +277,7 @@
     <file path="/fetcher-manager.js" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1377717507217" ignored="false" />
     <file path="/jquery.js" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1377740521169" ignored="false" />
     <file path="/application_helper.rb" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1377877763004" ignored="false" />
+    <file path="/quiet_assets.rb" changelist="438d4994-af3d-4571-9964-7d8d064905de" time="1378242978543" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,94 +297,38 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/alarm_manager/index.html.erb">
+      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/database.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="104" selection-start="1158" selection-end="1158" vertical-scroll-proportion="20.23077">
-              <folding>
-                <element signature="n#style#0;n#button#0;n#span#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fail-icon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/images/fail-icon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pass-icon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/images/pass-icon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="axis-form-manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="11" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
+            <state line="9" column="4" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hc-scatter-chart-icon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/images/hc-scatter-chart-icon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_settings_pane.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/settings/_settings_pane.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="53" selection-start="1793" selection-end="1793" vertical-scroll-proportion="-9.807693">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alarm-manager.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/alarm-manager.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="38" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1377897664167" expanded="false" signature="3006:3018" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="alarm_manager.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/alarm_manager.css.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="149" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.yml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/settings.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="48" selection-start="189" selection-end="189" vertical-scroll-proportion="0.18740158">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logger.txt" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/logger.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="0" selection-end="66" vertical-scroll-proportion="0.042079207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quiet_assets.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/quiet_assets.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="55" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -218,9 +351,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/dashboard.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/settings_controller.rb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css.scss" />
@@ -234,6 +364,9 @@
         <option value="$PROJECT_DIR$/app/views/analyze/_chart_canvas.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/alarm_manager.css.scss" />
         <option value="$PROJECT_DIR$/config/settings.yml" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/db_update.sh" />
+        <option value="$PROJECT_DIR$/config/initializers/quiet_assets.rb" />
       </list>
     </option>
   </component>
@@ -245,10 +378,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="502" />
-    <option name="y" value="66" />
-    <option name="width" value="1936" />
-    <option name="height" value="1176" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1618" />
+    <option name="height" value="870" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -314,283 +447,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="settings" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard_manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="analyze" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="alarm_manager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="d3prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
+              <option name="myItemId" value="wbam" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -601,13 +458,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="tasks" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="C:/RailsInstaller/Ruby1.9.3/bin/ruby.exe" />
+    <property name="options.lastSelected" value="tasks" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="C:/RailsInstaller/Ruby1.9.3/bin/ruby.exe" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -958,15 +815,15 @@
       <method />
     </configuration>
     <list size="9">
-      <item index="0" class="java.lang.String" itemvalue="Rails.Production: d3prototype" />
-      <item index="1" class="java.lang.String" itemvalue="Rails.Development: d3prototype" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.test_class" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Unnamed" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="6" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_the_truth" />
-      <item index="7" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.analyze_controller_test" />
-      <item index="8" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.datapoint_test" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="1" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.test_the_truth" />
+      <item index="2" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.analyze_controller_test" />
+      <item index="3" class="java.lang.String" itemvalue="Test::Unit/Shoulda/Minitest.datapoint_test" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Production: d3prototype" />
+      <item index="5" class="java.lang.String" itemvalue="Rails.Development: d3prototype" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.test_class" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.Unnamed" />
     </list>
     <recent_temporary>
       <list size="4">
@@ -1024,16 +881,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="502" y="66" width="1936" height="1176" extended-state="0" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33009708" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916266" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32916266" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33205006" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2585653" sideWeight="0.66795" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29451397" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2857143" sideWeight="0.5991678" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40083218" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35514918" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31568816" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1041,7 +898,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33205006" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1113,116 +970,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/dashboard_manager/_dashboard_dropdown.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="632" selection-end="632" vertical-scroll-proportion="-7.5384617">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/dashboard_manager_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="9" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/alarm_manager_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="9" selection-start="2095" selection-end="2095" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/settings/_settings_dropdown.erb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/analyze/_chart_canvas.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="357" selection-end="407" vertical-scroll-proportion="-5.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/analyze_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="4" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/settings/_settings_pane.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="53" selection-start="1793" selection-end="1793" vertical-scroll-proportion="-9.807693">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/alarm_manager/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="104" selection-start="1158" selection-end="1158" vertical-scroll-proportion="20.23077">
-          <folding>
-            <element signature="n#style#0;n#button#0;n#span#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#1;n#tr#1;n#table#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/fail-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/pass-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="11" selection-start="1353" selection-end="1353" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/images/hc-scatter-chart-icon.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/alarm-manager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="38" selection-start="3510" selection-end="3510" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1377897664167" expanded="false" signature="3006:3018" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/alarm_manager.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="149" selection-start="573" selection-end="573" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/settings.yml">
+    <entry file="file://$PROJECT_DIR$/log/development.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="48" selection-start="189" selection-end="189" vertical-scroll-proportion="0.18740158">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/test.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/data.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130820010646_create_delayed_jobs.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130820172027_add_toggle_chart_forms_and_toggle_presenter_mode_to_dashboards.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130822004301_add_axis_ranges_to_charts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130822235901_create_beanstalk_fetchers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130823214033_create_data_fetchers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130823232747_add_fetch_count_to_data_fetcher.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130823232808_add_fetch_count_to_beanstalk_fetcher.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="24" selection-start="141" selection-end="141" vertical-scroll-proportion="0.11208791">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/initializers/quiet_assets.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="55" selection-start="158" selection-end="158" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="4" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="0" selection-end="66" vertical-scroll-proportion="0.042079207">
           <folding />
         </state>
       </provider>

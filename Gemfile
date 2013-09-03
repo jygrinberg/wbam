@@ -47,8 +47,6 @@ end
 # Amazon Web Services SDK
 gem 'aws-sdk', '~> 1.0'
 
-#gem 'psych' # no longer needed?
-
 gem 'thin'
 
 gem 'protected_attributes' # enables attr_accessible
@@ -65,7 +63,6 @@ gem 'yaml_db' # database backup
 
 gem 'mysql'
 
-#gem 'delayed_job' #, '~> 2.1.2'
 gem 'delayed_job_active_record' # for background data fetch jobs
 
 gem 'daemons'
