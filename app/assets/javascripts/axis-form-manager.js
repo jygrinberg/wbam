@@ -111,7 +111,7 @@ function ChartFormManagers(form_id_number) {
                 $(axis_form_manager.spinner.el).hide();
                 chart.css('opacity', 1);
 
-                if (!data || data[0] == undefined || data[0].length == undefined || data[0]["data"].length == 0) return;
+                if (!data || data[0] == undefined || data[0]["data"] == undefined || data[0]["data"].length == 0) return;
 
                 if (alarm_failed)   chart.closest('.chart-well').css('background-color', 'red');
                 else                chart.closest('.chart-well').css('background-color', '');

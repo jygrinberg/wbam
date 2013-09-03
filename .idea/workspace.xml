@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="438d4994-af3d-4571-9964-7d8d064905de" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/settings.yml" afterPath="$PROJECT_DIR$/config/settings.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="d3prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -134,16 +130,16 @@
       <file leaf-file-name="logger.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logger.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="0" selection-end="66" vertical-scroll-proportion="0.0">
+            <state line="224" column="0" selection-start="0" selection-end="66" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="axis-form-manager.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="axis-form-manager.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="31" selection-start="4828" selection-end="4828" vertical-scroll-proportion="0.0">
+            <state line="114" column="17" selection-start="4951" selection-end="4951" vertical-scroll-proportion="0.7766498">
               <folding />
             </state>
           </provider>
@@ -167,10 +163,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analyze_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="analyze_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/analyze_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="8" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.36294416">
+            <state line="66" column="8" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -993,7 +989,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/logger.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="0" selection-end="66" vertical-scroll-proportion="0.0">
+        <state line="224" column="0" selection-start="0" selection-end="66" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1033,16 +1029,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js">
+    <entry file="file://$PROJECT_DIR$/app/controllers/analyze_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="31" selection-start="4828" selection-end="4828" vertical-scroll-proportion="0.0">
+        <state line="66" column="8" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/analyze_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/axis-form-manager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="8" selection-start="2784" selection-end="2784" vertical-scroll-proportion="0.36294416">
+        <state line="114" column="17" selection-start="4951" selection-end="4951" vertical-scroll-proportion="0.7766498">
           <folding />
         </state>
       </provider>
