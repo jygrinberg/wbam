@@ -6,6 +6,31 @@ WBAM is a tool to monitor the health of web applications hosted on Amazon Web Se
 * Charting Canvas: highly interactive charting tool to create colorful dashboards for large display screens and for in-depth analyses
 * Alarm Manager: summary of the website's current health to alert users about key metric outliers
 
+Set Up
+===
+Required technology:
+* Rails (recommended: 4.0.0)
+* Ruby (recommended 1.9.3)
+* AWS Account 
+ 
+Steps:
+* Fork WBAM repo
+* Create MySQL databases (default: 'wbam_dev', 'wbam_test', 'wbam_prod')
+* Create MySQL user with read/write permissision (default: username 'wbam' password 'wbam')
+* Update /config/database.yml if used database names, user names, or user passwords other than defaults
+* Update /config/settings.yml with AWS access key id, secret access key, and region
+* Run 'bundle install' to install missing gems
+* Run 'rake db:migrate' to create database tables
+* Run 'rake db:seed' to seed database 
+* Run 'rake jobs:work' to spawn background process for continuous data fetching
+* Run 'rails server' to start server
+* Navigate to localhost:3000
+* In the "Database" tab, launch a Beanstalk Fetcher (recommended -- repeat frequency: 30 sec)
+* In the "Database" tab, launch a Data Fetcher (recommended -- start time: 5 min ago, end time: now, repeat frequency: 3 min)
+* In the "Alarms" tab, create alarms
+* In the "Charts" tab, create charts
+
+
 Data Fetcher
 ===
 In the "Database" tab, WBAM users can launch a beanstalk fetcher to track the running load balancers and server instances at each timestamp, and a data fetcher to continouously fetch metric data for each running beanstalk. A dynamic user interface allows WBAM users to monitor that status of all running beanstalk and data etchers. 
