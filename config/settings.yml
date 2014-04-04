@@ -1,0 +1,10 @@
+aws:
+    accounts: [
+        {
+            access_key_id: <access_key_id>,
+            secret_access_key: <secret_access_key>,
+            region: us-west-2
+        }
+    ]
+time_format: "%e %b %Y %l:%M%P"
+time_format_seconds: "%e %b %Y %l:%M:%S%P"
