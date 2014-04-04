@@ -17,6 +17,7 @@
 
 # Ignore settings configuration file
 /config/settings.yml
+config/settings.yml
 
 # Ignore workspace files
 /.idea/*
